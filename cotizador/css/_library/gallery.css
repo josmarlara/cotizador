@@ -1,0 +1,193 @@
+/*****************************************
+	Name:    qGallery
+	Version: 1.0 (March 30 2008)
+	Author:  Sebastian Brink
+	Contact: http://www.quadrifolia.de
+******************************************/
+
+#gallery {
+	position: 				absolute;
+	width: 					900px;
+	height:					500px;
+	left:					50%;
+	top: 					70px;
+	margin-left:			-450px;
+	display:				block;
+	z-index:				5;
+}
+
+/* main parts */
+
+#gallery_header {
+	position:				absolute;
+	height:					50px;
+	background: 			transparent url("images/gallery/bg_header.gif") repeat-x top left;
+	overflow:				hidden;	
+}
+
+#gallery_content {
+	position:				absolute;
+	overflow:				hidden;
+	background-color:		#000;
+}
+
+#gallery_footer {
+	position:				absolute;
+	height:					30px;
+	background: 			transparent url("images/gallery/bg_footer.png") no-repeat top left;
+	overflow:				hidden;
+}
+
+/* overlay */
+
+#gallery_loader {
+	position: 				absolute;
+	display:				block;
+	background-color:		#000;
+	z-index:				200;
+}
+
+#gallery_loader_animation {
+	position:				absolute;
+	height:					48px;
+	width:					48px;
+	top:					50%;
+	left:					50%;
+	margin:					-24px 0px 0px -24px;
+	background: 			transparent url("images/gallery/ani_loading.gif") no-repeat top left;
+}
+
+/* title */
+
+#gallery_title {
+	position:				relative;
+	margin:					5px 0px 0px 15px;
+	max-width:				800px;
+	overflow:				hidden;
+	display:				block;
+}
+
+#gallery_title h1 {
+	font-family: 			"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:				24px;
+	font-weight:			normal;
+	text-shadow:			rgb(0, 0, 0) 0px -1px 1px;
+	white-space:			nowrap;
+	color:					#fff;
+}
+
+/* overview button */
+
+#viewOverview {
+	position:				relative;
+	top:					13px;
+	left:					20px;
+    height: 				24px;
+	margin-right:			6px;
+	padding-right:			6px;
+	background: 			transparent url('images/gallery/button_right.gif') no-repeat top right;
+	float: 					left;
+}
+
+#viewOverview span {
+	display: 				block;
+	font-family: 			"Helvetica Neue", Helvetica, Arial, sans;
+	font-size:				12px;
+	font-weight: 			bold;
+	text-decoration:		none;
+	text-shadow:			rgb(0, 0, 0) 0px -1px 1px;
+	white-space:			nowrap;
+	line-height:			14px;
+	color:					#fff;
+	height:					24px;
+	padding:				5px 0px 5px 6px;
+    background: 			transparent url('images/gallery/button_left.gif') no-repeat top left;
+}
+
+/* view buttons */
+
+#buttons {
+	position:				absolute;
+	width:					200px;
+	height:					14px;
+	top:					8px;
+	left:					10px;
+}
+
+#viewGrid {
+	width:					18px;
+	height:					14px;
+	margin-left:			10px;
+	background: 			transparent url("images/gallery/sprite_views.png") no-repeat 0px 0px;
+	cursor:					pointer;
+	float:					left;			
+}
+
+#viewGrid:hover {
+	background-position: 	0px -14px;
+}
+
+#viewMosaic {
+	width:					18px;
+	height:					14px;
+	margin-left:			10px;
+	background: 			transparent url("images/gallery/sprite_views.png") no-repeat -18px 0px;
+	cursor:					pointer;
+	float:					left;			
+}
+
+#viewMosaic:hover {
+	background-position: 	-18px -14px;
+}
+
+#viewCarousel {
+	width:					18px;
+	height:					14px;
+	margin-left:			10px;
+	background: 			transparent url("images/gallery/sprite_views.png") no-repeat -36px 0px;
+	cursor:					pointer;
+	float:					left;			
+}
+
+#viewCarousel:hover {
+	background-position: 	-36px -14px;
+}
+
+/* thumb view */
+
+#thumbs {
+	position:				absolute;
+	top:					0px;
+	left:					0px;
+}
+
+#thumbs_list {
+	height:					100%;
+}
+
+.thumbs_item {
+	list-style:				none;
+	float:					left;
+}
+
+.thumbs_img {
+	margin:					0px;
+	padding:				0px;
+}
+
+.thumbs_reflection {
+	margin:					0px;
+	padding:				0px;
+	display:				none;
+}
+
+.thumbs_title span {
+	display:				block;
+	margin:					5px;
+	text-align:				left;
+	color:					#ccc;
+	white-space: 			nowrap; 
+	overflow: 				hidden; 
+	text-overflow: 			ellipsis;
+}
+

@@ -1,0 +1,277 @@
+/*****************************************
+	Name:    Website Styles
+	Version: 1.0 (March 30 2008)
+	Author:  Sebastian Brink
+	Contact: http://www.quadrifolia.de
+******************************************/
+
+body {
+	height:					100%;
+	width:					100%;
+	background-color:		#fff; 			
+	overflow:				auto;
+}
+
+/* fonts */
+
+h1, h2, h3 {
+	font-family: 			'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#top h1 {
+	font-size:				24px;
+	color: 					#666;
+	line-height:			50px;
+}
+
+#top h1 span {
+	font-size:				12px;
+	margin-left:			10px;
+}
+
+#content h1 {
+	font-size:				2.3em;
+	letter-spacing: 		0.4pt;
+	color: 					#afcc2d;
+	padding-top: 			0.5em;
+	padding-bottom:			0.5em;
+}
+
+h2 {
+	font-size:				1.5em;
+	letter-spacing: 		0.4pt;
+	color: 					#afcc2d;
+	text-transform: 		uppercase;
+	padding-top: 			0.5em;
+	padding-bottom:			0.5em;
+}
+
+p {
+	padding-bottom: 		1.0em;
+	color:					#666;
+	font-size:				1.4em;
+}
+
+#extra_pos p {
+	color:					#fff;
+}
+
+#extra_pos ul {
+	color:					#fff;
+	font-size:				1.4em;
+	margin:					0px 0px 10px 20px;
+}
+
+#content ul {
+	color:					#666;
+	font-size:				1.4em;
+	margin-left:			20px;
+}
+
+/* raster */
+
+#gallery_shadow {
+	position: 				absolute;
+	width: 					966px;
+	height:					566px;
+	left:					50%;
+	top: 					37px;
+	margin-left:			-483px;
+	display:				block;
+	z-index:				4;
+	background: 			transparent url('images/bg_gallery_shadow.png') no-repeat top left;
+}
+
+#top {
+	position: 				relative;
+	width: 					100%;
+	height:					50px;
+	left:					0px;
+	top: 					0px;
+	background: 			transparent url('images/bg_top.gif') repeat-x top left;
+}
+
+#top_pos {
+	position:				relative;
+	width:					900px;
+	height:					50px;
+	top:					0px;
+	left:					50%;
+	margin-left:			-450px;
+}
+
+#example {
+	position: 				relative;
+	width: 					100%;
+	height:					638px;
+	left:					0px;
+	top: 					0px;
+	background: 			transparent url('images/bg_wood_top.jpg') repeat-x top left;
+}
+
+#content {
+	position: 				relative;
+	width: 					100%;
+	left:					0px;
+	top: 					0px;
+	background: 			transparent url('images/bg_content.gif') repeat-x top left;
+}
+
+#content_pos {
+	position:				relative;
+	width:					900px;
+	top:					0px;
+	left:					50%;
+	margin-left:			-450px;
+	padding:				20px 0px 20px 0px;
+}
+
+#content_left {
+	position:				relative;
+	width:					585px;
+	padding-right:			10px;
+	border-right:			1px solid #999;
+	float:					left;
+}
+
+#content_right {
+	position:				relative;
+	width:					290px;
+	margin-left:			10px;
+	float:					left;
+}
+
+#extra {
+	position: 				relative;
+	width: 					100%;
+	height:					254px;
+	left:					0px;
+	top: 					0px;
+	background: 			transparent url('images/bg_wood_bottom.jpg') repeat-x top left;
+}
+
+#extra_pos {
+	position:				relative;
+	width:					900px;
+	height:					254px;
+	top:					0px;
+	left:					50%;
+	margin-left:			-450px;
+	background: 			transparent url('images/bg_box.png') no-repeat top left;
+}
+
+#box_1 {
+	position:				absolute;
+	width:					250px;
+	height:					140px;
+	top:					70px;
+	left:					25px;
+	padding:				0px 10px 0px 10px;
+	color:					#fff;
+}
+
+#box_2 {
+	position:				absolute;
+	width:					250px;
+	height:					140px;
+	top:					70px;
+	left:					315px;
+	padding:				0px 10px 0px 10px;
+	color:					#fff;
+}
+
+#box_3 {
+	position:				absolute;
+	width:					250px;
+	height:					140px;
+	top:					70px;
+	left:					605px;
+	padding:				0px 10px 0px 10px;
+	color:					#fff;
+}
+
+
+#footer {
+	position: 				relative;
+	width: 					100%;
+	left:					0px;
+	top: 					0px;
+	line-height:			30px;
+	text-align:				center;
+	background: 			transparent url('images/bg_footer.gif') repeat-x top left;
+}
+
+/* forms */
+
+form div {
+	margin-bottom:			10px;
+}
+
+input { 
+    background-color: 		#fff; 
+    border: 				1px solid #666;
+    color:					#666;
+	font-size:				1.2em;
+	width:					160px;
+}
+
+#box_2 input { 
+    background-color: 		#fff; 
+    border: 				1px solid #666;
+    color:					#666;
+	font-size:				1.2em;
+	width:					180px;
+}
+
+#box_2 select { 
+	font-size:				1.2em;
+	width:					180px;
+}
+
+input.submit {
+	background-color:		#afcc2d;
+	border:					0px none #afcc2d;
+	color:					#fff;
+	padding:				0px 10px 0px 10px;
+	line-height:			20px;
+	font-size:				1.4em;
+	cursor: 				pointer;
+}
+
+#box_2 input.submit {
+	background-color:		#afcc2d;
+	border:					0px none #afcc2d;
+	color:					#fff;
+	padding:				0px 10px 0px 10px;
+	line-height:			20px;
+	font-size:				1.4em;
+	cursor: 				pointer;
+}
+
+span.label, span.spacer, span.multiple span {
+	width:					120px;
+	float:					left;
+	font-size:				1.2em;
+}
+
+#box_2 span.label {
+	width:					70px;
+	float:					left;
+	font-size:				1.2em;	
+}
+ 
+span.multiple {
+	float:					left;
+}
+
+span.button {
+	padding-left:			120px;
+}
+
+#box_2 span.button {
+	padding-left:			70px;
+}
+
+div.clear {
+	clear:					both;padding-top:5px;
+}

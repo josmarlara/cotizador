@@ -1,0 +1,75 @@
+/*****************************************
+	Name:    Scrollbar
+	Version: 1.0 (March 30 2008)
+	Author:  Sebastian Brink
+	Contact: http://www.quadrifolia.de
+******************************************/
+
+/* track */
+
+#scroller_track {
+	position: 				absolute;
+	width: 					15px;
+	background: 			transparent url("images/scroller/scrollbar_track.png") repeat-y top left;
+	cursor:					pointer;
+	z-index:				100;
+}
+
+/* handle */
+
+#scroller_handle {
+	position: 				absolute;
+	width: 					15px;
+	background-color: 		transparent;
+	cursor:					pointer;
+	z-index:				101;
+}
+
+#scroller_handle_top {
+	position:				relative;
+	width:					15px;
+	height:					7px;
+	background: 			transparent url("images/scroller/handle_top.png") no-repeat top left;
+}
+
+#scroller_handle_middle {
+	position:				relative;
+	width:					15px;
+	background: 			transparent url("images/scroller/handle_middle.png") repeat-y top left;
+}
+
+#scroller_handle_bottom {
+	position:				relative;
+	width:					15px;
+	height:					7px;
+	background: 			transparent url("images/scroller/handle_bottom.png") no-repeat top left;
+}
+
+/* arrows */
+
+#scroller_up {
+	position:				absolute;
+	height:					24px;
+	width:					15px;
+	background: 			transparent url("images/scroller/scrollbar_arrows.png") no-repeat 0px 0px;
+	cursor:					pointer;
+	z-index:				101;
+}
+
+#scroller_up:hover {
+	background: 			transparent url("images/scroller/scrollbar_arrows.png") no-repeat -15px 0px;
+}
+
+#scroller_down {
+	position:				absolute;
+	height:					24px;
+	width:					15px;
+	background: 			transparent url("images/scroller/scrollbar_arrows.png") no-repeat 0px -24px;
+	cursor:					pointer;
+	z-index:				101;
+}
+
+#scroller_down:hover {
+	background: 			transparent url("images/scroller/scrollbar_arrows.png") no-repeat -15px -24px;
+}
+

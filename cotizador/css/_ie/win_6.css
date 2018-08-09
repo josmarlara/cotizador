@@ -1,0 +1,25 @@
+/**********************************
+
+Name:    	IE corrections
+Version: 	0.1 (March 27 2008)
+Author:  	Sebastian Brink
+Contact: 	http://www.quadrifolia.de
+
+Example:
+
+#ie_png {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/image.png', sizingMethod='scale');
+}
+
+sizingMethods:
+
+crop: Clips the image to fit the dimensions of the object.
+image: Default. Enlarges or reduces the border of the object to fit the dimensions of the image.
+scale: Stretches or shrinks the image to fill the borders of the object.
+
+***********************************/
+
+img {
+	behavior: url('css/_ie/pngbehavior.htc');
+}

@@ -1,0 +1,122 @@
+/*****************************************
+	Name:    Carousel
+	Version: 1.0 (March 30 2008)
+	Author:  Sebastian Brink
+	Contact: http://www.quadrifolia.de
+******************************************/
+
+#carousel {
+	background-color:		#000;
+}
+
+a img, iframe { 
+	border: 				none; 
+}
+
+a { 
+	outline: 				0;
+}
+
+/* navigation */
+
+#carousel_navi {
+	position:				absolute;
+	overflow:				hidden;
+	display:				block;
+	width:					32px;
+	height:					32px;
+	cursor:					pointer;
+}
+
+#carousel_navi.icon_left {
+	background: 			transparent url('images/carousel/icon_left.png') no-repeat top left;
+}
+
+#carousel_navi.icon_fastLeft {
+	background: 			transparent url('images/carousel/icon_fastLeft.png') no-repeat top left;
+}
+
+#carousel_navi.icon_right {
+	background: 			transparent url('images/carousel/icon_right.png') no-repeat top left;
+}
+
+#carousel_navi.icon_fastRight {
+	background: 			transparent url('images/carousel/icon_fastRight.png') no-repeat top left;
+}
+
+#carousel_navi.icon_center {
+	background: 			transparent url('images/carousel/icon_center.png') no-repeat top left;
+}
+
+#carousel_naviPlay {
+	position:				relative;
+	overflow:				hidden;
+	width:					40px;
+	height:					40px;
+	top:					100%;
+	left:					100%;
+	margin:					-50px 0px 0px -50px;
+	cursor:					pointer;
+}
+
+#carousel_naviPlay.icon_play {
+	background:				transparent url('images/carousel/icon_play.png') no-repeat 0px 0px;
+}
+
+#carousel_naviPlay.icon_pause {
+	background:				transparent url('images/carousel/icon_play.png') no-repeat 0px -40px;
+}
+
+/* items */
+
+ul.carousel_list li {
+	list-style:				none;
+	float:					left;
+}
+
+.carousel_item {
+	position:				absolute;
+}
+
+/* item title */
+
+#carousel_itemTitle {
+	position:				absolute;
+	display:				block;
+	font-family: 			"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:				12px;
+	font-weight:			bold;
+	text-shadow:			rgb(0, 0, 0) 0px -1px 1px;
+	text-align:				center;
+	color:					#fff;
+	white-space: 			nowrap; 
+	overflow: 				hidden; 
+	text-overflow: 			ellipsis;
+	z-index:				2;
+}
+
+/* opacity */
+
+.opacity_100 {
+	filter:					alpha(opacity=100);
+	-moz-opacity: 			1.0;
+	opacity: 				1.0;
+}
+
+.opacity_30 {
+	filter:					alpha(opacity=30);
+	-moz-opacity: 			0.3;
+	opacity: 				0.3;
+}
+
+.opacity_15 {
+	filter:					alpha(opacity=15);
+	-moz-opacity: 			0.15;
+	opacity: 				0.15;
+}
+
+.opacity_0 {
+	filter:					alpha(opacity=0);
+	-moz-opacity: 			0.0;
+	opacity: 				0.0;
+}

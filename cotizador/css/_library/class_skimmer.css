@@ -1,0 +1,84 @@
+/*****************************************
+	Name:    Skimmer
+	Version: 1.0 (March 30 2008)
+	Author:  Sebastian Brink
+	Contact: http://www.quadrifolia.de
+******************************************/
+
+.skimmerFrame {
+	position:				relative;
+	width:					160px;
+	height:					200px;
+	margin:					10px 0px 0px 10px;
+	background-color:		#000;
+	cursor:					pointer;
+	float:					left;
+}
+
+.skimmer {
+	position:				absolute;
+	width:					160px;
+	height:					160px;
+	top:					0px;
+	left:					0px;
+	border:					1px solid #000;
+	background-color:		#000;
+	cursor:					pointer;
+	float:					left;
+}
+
+.skimmerTitle {
+	position:				absolute;
+	width:					160px;
+	height:					15px;
+	top:					165px;
+	left:					5px;
+	font-family: 			"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:				13px;
+	font-weight: 			bold;
+	text-decoration:		none;
+	white-space:			nowrap;
+	color:					#fff;
+	cursor:					pointer;
+	overflow:				hidden;
+	text-overflow: 			ellipsis;
+}
+
+.skimmerCounter {
+	position:				absolute;
+	width:					160px;
+	height:					15px;
+	top:					180px;
+	left:					5px;
+	font-family: 			"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:				11px;
+	font-weight: 			bold;
+	text-decoration:		none;
+	white-space:			nowrap;
+	color:					rgb(112, 176, 255);
+	cursor:					pointer;
+	overflow:				hidden;
+	text-overflow: 			ellipsis;
+}
+
+.skimmerMask {
+	position:				absolute;
+	width:					162px;
+	height:					162px;
+	left:					0px;
+	top:					0px;
+	background:				url('images/skimmer/mask.png');
+}
+
+.skimmerMarker {
+	position:				absolute;
+	width:					0px;
+	height:					160px;
+	left:					0px;
+	top:					0px;
+	background-color:		#000;
+	display:				none;
+	opacity:				0.5;
+	-moz-opacity:			0.5;
+	filter:					alpha(opacity=50);
+}

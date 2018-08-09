@@ -1,0 +1,117 @@
+/*****************************************
+	Name:    Image Viewer
+	Version: 1.0 (March 27 2008)
+	Author:  Sebastian Brink
+	Contact: http://www.quadrifolia.de
+******************************************/
+
+#imgViewer {
+	position: 				absolute;
+	display:				none;
+	top: 					0;
+	left: 					0;
+	width: 					100%;
+	height: 				100%;
+	background-color: 		transparent;
+	z-index: 				201;
+}
+
+/* overlay */
+
+#imgViewer_overlay {
+	position: 				absolute;
+	display:				none;
+	top: 					0;
+	left: 					0;
+	height:					100%;
+	width:					100%;
+	background-color: 		#000;
+	z-index: 				200;
+}
+
+/* animations */
+
+#imgViewer_loading {
+	position: 				absolute;
+	width: 					100px;
+	height: 				100px;
+	background: 			transparent url("images/viewer/ani_loading.gif") no-repeat top left;
+}
+
+#imgViewer_processing {
+	position: 				absolute;
+	top:					0px;
+	left:					0px;
+	width: 					100px;
+	height: 				100px;
+	background: 			transparent url("images/viewer/ani_processing.gif") no-repeat top left;
+	z-index: 				202;
+}
+
+/* container */
+
+#imgViewer_container {
+	background-color:		#fff;
+}
+
+/* title */
+
+#imgViewer_title {
+	font-family: 			"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:				12px;
+	font-weight:			bold;
+	text-shadow:			rgb(0, 0, 0) 0px -1px 1px;
+	text-align:				left;
+	color:					#fff;
+	white-space: 			nowrap;
+	text-overflow: 			ellipsis;
+	background-color: 		#000;
+}
+
+/* close button */
+
+#imgViewer_closebox {
+	position:				absolute;
+	width:					30px;
+	height:					30px;
+	background: 			transparent url("images/viewer/close.png") no-repeat 0px 0px;
+	cursor:					pointer;
+}
+
+#imgViewer_closebox:hover {
+	background-position: 	0px -30px;
+}
+
+/* navigation buttons */
+
+#imgViewer_naviLeft {
+	position: 				absolute;
+	width: 					35px;
+	height: 				27px;
+	cursor:					pointer;
+	background: 			transparent url("images/viewer/arrows.png") no-repeat 0px 0px;
+}
+
+#imgViewer_naviLeft:hover {
+	background-position: 	0px -27px;
+}
+
+#imgViewer_naviLeft:active {
+	background-position: 	0px -54px;
+}
+
+#imgViewer_naviRight {
+	position: 				absolute;
+	width: 					35px;
+	height: 				27px;
+	cursor:					pointer;
+	background: 			transparent url("images/viewer/arrows.png") no-repeat -35px 0px;
+}
+
+#imgViewer_naviRight:hover {
+	background-position: 	-35px -27px;
+}
+
+#imgViewer_naviRight:active {
+	background-position: 	-35px -54px;
+}

@@ -1,0 +1,50 @@
+/*****************************************
+	Name:    Slider
+	Version: 1.0 (March 27 2008)
+	Author:  Sebastian Brink
+	Contact: http://www.quadrifolia.de
+******************************************/
+
+#slider {
+	position:				absolute;
+	width:					220px;
+	height:					18px;
+	top:					6px;
+	left:					100%;
+    margin-left:			-240px;
+	display:				block;
+}
+
+#slider_track {
+    width:					180px;
+	height:					18px;
+	float:					left;
+	cursor: 				pointer;
+    background:				transparent url('images/slider/track.png') no-repeat center left;
+}
+
+#slider_handle {
+    width:					12px;
+    height:					18px;
+    margin:					0;
+	cursor: 				pointer;
+	background:				transparent url('images/slider/handle_hover.png') no-repeat 0px 1px;
+}
+
+#slider_handle:hover {
+	background-image:		url('images/slider/handle.png');
+}
+
+#slider_left_icon {
+	width:					20px;
+	height:					18px;
+	float:					left;
+    background:				transparent url('images/slider/icon_left.png') no-repeat center left;
+}
+
+#slider_right_icon {
+	width:					20px;
+	height:					18px;
+	float:					left;
+    background:				transparent url('images/slider/icon_right.png') no-repeat center right;	
+}

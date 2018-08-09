@@ -1,0 +1,17 @@
+/*****************************************
+	Name:    Main Screen CSS Import
+	Version: 1.0 (March 30 2008)
+	Author:  Sebastian Brink
+	Contact: http://www.quadrifolia.de
+******************************************/
+
+@import "_library/reset.css";
+@import "_library/core.css";
+@import "_library/gallery.css";
+@import "_library/class_carousel.css";
+@import "_library/class_scrollbar.css";
+@import "_library/class_skimmer.css";
+@import "_library/class_slider.css";
+@import "_library/class_viewer.css";
+
+@import "main.css";
